@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>GALERIA DE FOTOS</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <div class='title-with-love'>
+    UN PEQUEÑO RECUERDO DE LO QUE VIVIMOS ESTE AÑO
+    <span>♥</span>
+    TODO ES MAS BONITO A TU LADO, TE AMO!
+  </div>
+
+  <div class="Container">
+    <div class="Picture">
+      <img class="Picture-img" src="img/foto1.jpg" alt="" />
+      <div class="Picture-note"><span>hayhay cuando me enviaste ese mensaje no sabes como le sonrei tanto al cel</span></div>
+    </div>
+    <div class="Picture">
+      <img class="Picture-img" src="img/foto2.jpg" alt="" />
+      <div class="Picture-note"><span>Cuando me daban los ataques de ansiedad de pensar que no te gustaba hablar conmigo</span></div>
+    </div>
+    <div class="Picture">
+      <img class="Picture-img" src="img/foto4.jpg" alt="" />
+      <div class="Picture-note"><span>Cuando hicimos el wait por primera vez </span></div>
+    </div>
+    <div class="Picture">
+      <img class="Picture-img" src="img/foto3.jpg" alt="" />
+      <div class="Picture-note"><span>Cuando me enseñaste la bliblia y los devocacionales, fue un lindo gesto</span></div>
+    </div>
+    <div class="Picture">
+      <img class="Picture-img" src="img/foto5.jpg" alt="" />
+      <div class="Picture-note"><span>Cuando creamos las playlist para dedircarnos canciones</span></div>
+    </div>
+    <div class="Picture">
+      <img class="Picture-img" src="img/foto15.jpg" alt="" />
+      <div class="Picture-note"><span>Cuando trataba de ayudarte con la cuenta de tu papa</span></div>
+    </div>
+    <div class="Picture">
+      <img class="Picture-img" src="img/foto16.jpg" alt="" />
+      <div class="Picture-note"><span>Cuando salias con tus amigos, pero preferias hablar conmigo </span></div>
+    </div>
+    <div class="Picture">
+      <img class="Picture-img" src="img/foto10.jpg" alt="" />
+     
+      <div class="Picture-note"><span>Cuando no ganaste el partido, pero ya eras una campeona en mis ojos </span></div>
+    </div>
+    <div class="Picture">
+      <img class="Picture-img" src="img/foto8.jpg" alt="" />
+      <div class="Picture-note"><span>Cuando bautizaste nuestra hija la "tuga" jajajajaja</span></div>
+    </div>
+    <div class="Picture">
+      <img class="Picture-img" src="img/foto7.jpg" alt="" />
+      <div class="Picture-note"><span>La primera vez que te dije "Te quiero" no fue con palarbas pero te lo hice saber</span></div>
+    </div>
+    <div class="Picture">
+      <img class="Picture-img" src="img/imagen9.jpg" alt="" />
+      <div class="Picture-note"><span>Pasaba el tiempo y nuestro amor seguia crecreciendo cada vez mas</span></div>
+    </div>
+    <div class="Picture">
+      <img class="Picture-img" src="img/foto6.jpg" alt="" />
+      <div class="Picture-note"><span>Cuando me invitabas a jugar, era mi momneto mas feliz que tenia en todo el dia</span></div>
+    </div>
+    <div class="Picture">
+      <img class="Picture-img" src="img/foto11.jpg" alt="" />
+      <div class="Picture-note"><span>Cuando me hacias compañia cuando iba al colegio</span></div>
+    </div>
+    <div class="Picture">
+      <img class="Picture-img" src="img/foto12.jpg" alt="" />
+      <div class="Picture-note"><span>La primera vez que jugabamos hasta tarde y en call mdss 😍</span></div>
+    </div>
+    <div class="Picture">
+      <img class="Picture-img" src="img/foto13.jpg" alt="" />
+      <div class="Picture-note"><span>La primera vez que te dedique "Polos Opuestos"</span></div>
+    </div>
+    <div class="Picture">
+      <img class="Picture-img" src="img/foto14.jpg" alt="" />
+      <div class="Picture-note"><span>Nuestro primer encuentro</span></div>
+    </div>
+  </div>
+
+  <button class="Text">
+    "Descubre lo que siento por ti mi amor"
+    <img class="Song-img" src="img/song code.png" alt="" />
+  </button>
+
+  <div class='made-with-love'>
+    CON TODO CARIÑO
+    <span>♥</span>
+    PARA MI NIÑA MEL
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const video = document.getElementById('autoplayVideo');
+      
+      video.play().catch(function(error) {
+        console.log("Error reproduciendo el video:", error);
+      });
+
+      video.addEventListener('loadeddata', function() {
+        console.log("Video cargado correctamente");
+        video.play().catch(function(error) {
+          console.log("Error después de cargar:", error);
+        });
+      });
+
+      video.addEventListener('error', function() {
+        console.log("Error al cargar el video");
+        console.log(video.error);
+      });
+    });
+  </script>
+</body>
+
+</html>
